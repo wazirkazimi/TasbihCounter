@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+}
+
+:root {
+    --accent: #00EA86;
+    --icon-stroke: 6px solid var(--accent) --bg:var(--accent) --accent-less-dark: #00BF6E;
+    --accent-dark: #007543;
+}
+
+.app-body {
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex; */
+}
+.header{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10%;
+    align-items: center;
+    margin-left: 156px;
+
+}
+h1 {
+    color: white;
+    justify-content: center;
+    display: flex;
+    font-size: xxx-large;
+    animation: animateCount 0.60s ease;
+}
+@keyframes animateCount {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .Reset{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 24px;
+    position: static;
+    height: 36px;
+    background-color: #222;
+    border-radius: 60px;
+    border: none;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 70px;
+    color: #fff;
+    cursor: pointer;
+  }
+.btns {
+    border: none;
+    margin-top: 70px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.incermentor {
+    height: 37vh;
+    width: 18vw;
+    border-radius: 50%;
+    background-color: #01301c;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+.incermentor:active {
+    background-color: var(--accent-dark);
+    border-color: var(--accent);
+    background-size: 100%;
+    transition: 0s;
+}
+
+.incermentor>img {
+    height: 37vh;
+    width: 18vw;
+    border-radius: 50%;
+    background-color: #01301c;
+    border: none;
+    /* position: absolute; */
+    border-style: none;
+}
+
+.decermentor {
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: #01301c;
+    border: none;
+    border-style: none;
+    margin-top: 15px;
+    cursor: pointer;
+    border: 6px solid var(--bg);
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.decermentor>img {
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: #01301c;
+    border: none;
+    /* position: absolute; */
+    border-style: none;
+}
+@media  (max-width: 900px){
+    .header{
+        display: flex;
+        margin-left: 118px;
+        margin-right: auto;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 10%;
+        align-items: center;
+        /* margin-left: 156px; */
+    
+    }
+    h1 {
+        color: white;
+        justify-content: center;
+        display: flex;
+        font-size: large;
+        animation: animateCount 0.60s ease;
+    }
+    .btns {
+        border: none;
+        margin-top: 70px;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .incermentor {
+        height: 15vh;
+        width: 30vw;
+        border-radius: 50%;
+        background-color: #01301c;
+        border: none;
+        border-style: none;
+        cursor: pointer;
+    }
+    
+    .incermentor:active {
+        background-color: var(--accent-dark);
+        border-color: var(--accent);
+        background-size: 100%;
+        transition: 0s;
+    }
+    
+    .incermentor>img {
+        height: 14vh;
+        width: 17vw;
+        border-radius: 50%;
+        background-color: #01301c;
+        border: none;
+        /* position: absolute; */
+        border-style: none;
+    }
+    
+    .decermentor {
+        height: 10vh;
+        width: 23vw;
+        border-radius: 50%;
+        background-color: #01301c;
+        border: none;
+        border-style: none;
+        margin-top: 15px;
+        cursor: pointer;
+        border: 6px solid var(--bg);
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .decermentor>img {
+        height: 10vh;
+        width: 23vw;
+        border-radius: 50%;
+        background-color: #01301c;
+        border: none;
+        /* position: absolute; */
+        border-style: none;
+    }
+}
